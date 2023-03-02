@@ -1,4 +1,4 @@
-The only purpose of this repository is to host a copy of Andreas Politz's ~scroll-other-window.el~ (originally published [[https://gist.github.com/politza/3f46785742e6e12ba0d1a849f853d0b9#file-scroll-other-window-el][here]]) so that it can be installed directly via [[https://github.com/radian-software/straight.el][straight]]:
+This repository hosts a copy of Andreas Politz's ~scroll-other-window.el~ (originally published [[https://gist.github.com/politza/3f46785742e6e12ba0d1a849f853d0b9#file-scroll-other-window-el][here]]) so that it can be installed directly via [[https://github.com/radian-software/straight.el][straight]]:
 
 #+begin_src emacs-lisp
 (use-package scroll-other-window
