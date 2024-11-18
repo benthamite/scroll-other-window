@@ -1,10 +1,25 @@
-This repository hosts a copy of Andreas Politz's ~scroll-other-window.el~ (originally published [[https://gist.github.com/politza/3f46785742e6e12ba0d1a849f853d0b9#file-scroll-other-window-el][here]]) so that it can be installed directly via [[https://github.com/radian-software/straight.el][straight]]/[[https://github.com/progfolio/elpaca][elpaca]]:
+This repository hosts a copy of Andreas Politz's ~scroll-other-window.el~ (originally published [[https://gist.github.com/politza/3f46785742e6e12ba0d1a849f853d0b9#file-scroll-other-window-el][here]]) so that it can be installed directly:
 
 #+begin_src emacs-lisp
+;; with vc
+(use-package annas-archive
+  :vc (:url "https://github.com/benthamite/scroll-other-window")
+  :after pdf-tools)
+
+;; with elpaca
 (use-package scroll-other-window
-  :straight (scroll-other-window
-             :host github
-	     :repo "benthamite/scroll-other-window")
-  :after pdf-tools             
-  :demand t)
+  :ensure (:host github :repo "benthamite/scroll-other-window")
+  :after pdf-tools)
+
+;; with straight
+(use-package scroll-other-window
+  :straight (:host github :repo "benthamite/scroll-other-window")
+  :after pdf-tools)
+
+;; with quelpa
+(use-package scroll-other-window
+  :quelpa (scroll-other-window :fetcher github :repo "benthamite/scroll-other-window")
+  :after pdf-tools)
 #+end_src
+
+
