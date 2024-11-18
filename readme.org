@@ -1,3 +1,5 @@
+#+title: scroll-other-window
+
 This repository hosts a copy of Andreas Politz's ~scroll-other-window.el~ (originally published [[https://gist.github.com/politza/3f46785742e6e12ba0d1a849f853d0b9#file-scroll-other-window-el][here]]) so that it can be installed directly:
 
 #+begin_src emacs-lisp
